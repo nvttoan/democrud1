@@ -7,6 +7,7 @@
             <th>Email Id</th>
             <th>Actions</th>
         </tr>
+
     </thead>
     <tbody>
         <tr *ngFor="let employee of employees">
@@ -19,6 +20,9 @@
                 <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">View</button>
 
             </td>
+            
         </tr>
+        <button type="submit" class="btn btn-primary" (click)="onLogout()">Logout</button>
+
     </tbody>
 </table>

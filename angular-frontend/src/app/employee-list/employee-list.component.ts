@@ -13,14 +13,20 @@ export class EmployeeListComponent implements OnInit {
   constructor(private employeeService: EmployeeService, private router:Router){
 
   }
+  onLogout() {
+    // xử lý đăng xuất tại đây (ví dụ: xóa token, xóa thông tin user)
+    this.router.navigate(['/']); // chuyển hướng đến trang chủ
+  }
   ngOnInit(): void {
       this.getEmployees();
+      
   }
   private getEmployees(){
     this.employeeService.getEmployeesList().subscribe(data => {
       this.employees = data;
     })
   }
+  
   employeeDetails(id:number){
     this.router.navigate(['employee-details', id]);
 

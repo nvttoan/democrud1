@@ -16,6 +16,10 @@ export class CreateEmployeeComponent implements OnInit {
   }
   ngOnInit(): void{
   }
+  onLogout() {
+    // xử lý đăng xuất tại đây (ví dụ: xóa token, xóa thông tin user)
+    this.router.navigate(['/']); // chuyển hướng đến trang chủ
+  }
   saveEmployee(){
     this.employeeService.CreateEmployee(this.employee).subscribe(data =>{
       console.log(data);
