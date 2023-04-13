@@ -1,17 +1,20 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('https://res.cloudinary.com/jerrick/image/upload/v1664190297/6331875947b91b001d247521.jpg'); 
+ height: 100px;background-size: cover;background-position: center;">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+      <a style="margin-top: 30px;font-weight: bold;" routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
     </li>
     <li class="nav-item">
-      <a routerLink="create-employees" routerLinkActive="active" class="nav-link">Add Employee</a>
+      <a style="margin-top: 30px;font-weight: bold;"routerLink="create-employees" routerLinkActive="active" class="nav-link">Add Employee</a>
     </li>
-  </ul>
+  </ul> 
+  
 </nav>
-<h1 class="text-center">{{title}}</h1>
-<div class="container">
+
+<body class="container">
   <router-outlet> </router-outlet>
-</div>
+</body>
 <footer class="footer">
   <div class="container">
     <h1>FOOTER 2023</h1>

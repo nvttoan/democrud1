@@ -2,8 +2,5 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 300px;
-    max-width: 500px; /* Thay đổi giá trị tùy ý */
-    margin: 0 auto;
+    
   }

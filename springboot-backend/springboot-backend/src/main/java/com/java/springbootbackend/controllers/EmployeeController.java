@@ -18,7 +18,6 @@ import com.java.springbootbackend.repository.EmployeeRepository;
 public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
-
     // get all
     @GetMapping("/employees")
     public List<Employee> getAllEmployees() {
@@ -59,5 +58,4 @@ public class EmployeeController {
         response.put("delete", Boolean.TRUE);
         return ResponseEntity.ok(response);
     }
-
 }

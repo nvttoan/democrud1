@@ -14,8 +14,7 @@ export class EmployeeListComponent implements OnInit {
 
   }
   onLogout() {
-    // xử lý đăng xuất tại đây (ví dụ: xóa token, xóa thông tin user)
-    this.router.navigate(['/']); // chuyển hướng đến trang chủ
+    this.router.navigate(['/']);
   }
   ngOnInit(): void {
       this.getEmployees();
